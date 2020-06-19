@@ -1,0 +1,56 @@
+extends ../layout
+
+block content
+	.container
+		#products-carousel.carousel.slide.carousel-fade(data-ride='carousel')
+			ol.carousel-indicators
+				li.active(data-target='#products-carousel', data-slide-to='0')
+				li(data-target='#products-carousel', data-slide-to='1')
+				li(data-target='#products-carousel', data-slide-to='2')
+				li(data-target='#products-carousel', data-slide-to='3')
+			.carousel-inner(role='listbox')
+				.item.active
+					img(src='/images/1.jpg', alt='', style="width:100%;")
+				.item
+					img(src='/images/2.jpg', alt='', style="width:100%;")
+				.item
+					img(src='/images/3.jpg', alt='', style="width:100%;")
+				.item
+					img(src='/images/4.jpg', alt='', style="width:100%;")
+			a.left.carousel-control(href='#products-carousel', role='button', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+				span.sr-only Previous
+			a.right.carousel-control(href='#products-carousel', role='button', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+				span.sr-only Next
+	.section-colored.text-center
+		.container
+			.row
+				.col-lg-12
+					h2 We are Delivering Essentials
+					p
+						| Please check availability in your area by verifying Pincode.
+					hr
+	.section
+		.container
+			.row
+				.col-lg-12.text-center
+					h2 Offers on Daily Essentials
+					hr
+					.col-lg-4.col-md-4.col-sm-6
+						a(href='portfolio-item.html')
+							img.img-responsive.ml-t(src='/images/9.jpg')
+					.col-lg-4.col-md-4.col-sm-6
+						a(href='portfolio-item.html')
+							img.img-responsive.ml-t(src='/images/6.jpg')
+					.col-lg-4.col-md-4.col-sm-6
+						a(href='portfolio-item.html')
+							img.img-responsive.ml-t(src='/images/5.jpg')
+	.section-colored
+		.container
+			.row
+				.col-lg-6.col-md-6.col-sm-6
+					img.img-responsive(src='/images/7.jpg')
+				.col-lg-6.col-md-6.col-sm-6
+					img.img-responsive(src='/images/8.jpg')
+

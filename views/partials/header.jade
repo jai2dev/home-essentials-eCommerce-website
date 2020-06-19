@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		title Home Essentials
+		
+		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css')
+		link(rel='stylesheet', href='/libraries/lobibox/lobibox.min.css')
+		link(rel='stylesheet', href='/libraries/imageviewer/imageviewer.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	
+	body.override
+		nav.navbar.navbar-inverse(role="navigation")
+			div.container
+				div.navbar-header
+					button(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false").navbar-toggle.collapsed
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a(href="/").navbar-brand(style="font-size:50px;") 
+						img.d-ib.ml-r(src="/images/large.png", width="100")
+						| Home Essentials
+			div.container
+				div#navbar.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-right
+						li
+							a(href="/products",style="font-size:30px;") Our Products
+							if user
+								li.dropdown
+									a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false",style="font-size:30px;").dropdown-toggle Dashboard
+										span.caret
+									ul.dropdown-menu
+										li
+											a(href="/user/account",style="font-size:30px;") Account
+										li
+											a(href="/user/products",style="font-size:30px;") My Products
+										li
+											a(href="/user/products/add") Add Product
+							if user
+								li
+									a(href="/user/logout",style="font-size:30px;") Logout
+							else 
+								li
+									a(href="/user/register",style="font-size:30px;") Register
+								li
+									a(href="/user/login",style="font-size:30px;") Login

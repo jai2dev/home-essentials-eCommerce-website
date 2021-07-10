@@ -1,9 +1,12 @@
 # home-essentials
-this is an ecommerce website using nodejs
+## This is an ecommerce website using nodejs
+### Deployed link https://home-essentials-web.herokuapp.com/
 
-to run the project install node modules
-using the command "npm install"
+1. To run the project install node modules
+  using the command "npm install"
 
-then open the main folder in terminal and command : nodemon
-then open another terminal to run database : mongod
-another for viewing database : mongo
+2. then open the main folder in terminal and type command : nodemon
+
+3. then open another terminal to run database : mongod
+
+4. further (optional) another terminal for viewing database : mongo

@@ -1,5 +1,5 @@
 # home-essentials
-## This is an ecommerce website using nodejs
+## This is an ecommerce website built using nodejs, express, mongodb.
 ### Deployed link https://home-essentials-web.herokuapp.com/ 
 ### Note: Free tier herkou doesn't support database functionalities so some functions may not work. If interested in the project instead fork and run locally
 
